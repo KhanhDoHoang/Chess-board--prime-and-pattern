@@ -15,31 +15,11 @@
                 <legend>Prime finder</legend>
                 <p>
                     <label> Range 1: </label>
-                    <input list="range1s" name="range1">
-                    <datalist id="range1s">
-                        <?php
-                        for ($i=1; $i<=100; $i++)
-                        {
-                            ?>
-                                <option value="<?php echo $i;?>"><?php echo $i;?></option>
-                            <?php
-                        }
-                        ?>
-                    </datalist>
+                    <input type="number" min="1" max="100" name="range1"/>
                 </p>
                 <p>
                     <label> Range 2: </label>
-                    <input list="range2s" name="range2">
-                    <datalist id="range2s">
-                        <?php
-                        for ($i=1; $i<=100; $i++)
-                        {
-                            ?>
-                                <option value="<?php echo $i;?>"><?php echo $i;?></option>
-                            <?php
-                        }
-                        ?>
-                    </datalist>
+                    <input type="number" min="1" max="100" name="range2"/>
                 </p>
                 <input type="submit" value="Generate!">
         </form>
